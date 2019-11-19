@@ -1,0 +1,7 @@
+Sequence names of taxon 6 and 7 are identical, they are both called Ursus
+Sequence names of taxon 6 and 10 are identical, they are both called Ursus
+Sequence names of taxon 6 and 11 are identical, they are both called Ursus
+Sequence names of taxon 7 and 10 are identical, they are both called Ursus
+Sequence names of taxon 7 and 11 are identical, they are both called Ursus
+Sequence names of taxon 10 and 11 are identical, they are both called Ursus
+ERROR: Found 6 taxa that had equal names in the alignment, exiting...

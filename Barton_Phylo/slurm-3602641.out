@@ -1,0 +1,142 @@
+Starting raxmlHPC run at $ (date)
+Warning, you specified a working directory via "-w"
+Keep in mind that RAxML only accepts absolute path names, not relative ones!
+
+RAxML can't, parse the alignment file as phylip file 
+it will now try to parse it as FASTA file
+
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+This is the RAxML Master Pthread
+
+This is RAxML Worker Pthread Number: 1
+
+This is RAxML Worker Pthread Number: 2
+
+This is RAxML Worker Pthread Number: 3
+
+This is RAxML Worker Pthread Number: 4
+
+This is RAxML Worker Pthread Number: 6
+
+This is RAxML Worker Pthread Number: 5
+
+This is RAxML Worker Pthread Number: 7
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 199 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 0.00%
+
+RAxML rapid bootstrapping and subsequent ML search
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+
+Executing 2 rapid bootstrap inferences and thereafter a thorough ML search 
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 199
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-PTHREADS-AVX -T 8 -f a -m GTRGAMMA -p 618 -N 2 -x 309 -s KnownBears.aln -n KnownBearsTree -w /project/inbre-train/inbre005/mob4485/Barton_Phylo/BearTrees -o GiantPanda 
+
+
+
+Time for BS model parameter optimization 0.014313
+Bootstrap[0]: Time 0.412342 seconds, bootstrap likelihood -4052.260808, best rearrangement setting 6
+Bootstrap[1]: Time 0.027261 seconds, bootstrap likelihood -3928.030334, best rearrangement setting 5
+
+
+Overall Time for 2 Rapid Bootstraps 0.610347 seconds
+Average Time per Rapid Bootstrap 0.305174 seconds
+
+Starting ML Search ...
+
+Fast ML optimization finished
+
+Fast ML search Time: 0.053361 seconds
+
+Slow ML Search 0 Likelihood: -3953.228363
+Slow ML optimization finished
+
+Slow ML search Time: 0.046979 seconds
+Thorough ML search Time: 0.048416 seconds
+
+Final ML Optimization Likelihood: -3953.228366
+
+Model Information:
+
+Model Parameters of Partition 0, Name: No Name Provided, Type of Data: DNA
+alpha: 0.198465
+Tree-Length: 1.182530
+rate A <-> C: 18.775271
+rate A <-> G: 650.443820
+rate A <-> T: 12.903493
+rate C <-> G: 16.470629
+rate C <-> T: 648.817797
+rate G <-> T: 1.000000
+
+freq pi(A): 0.287135
+freq pi(C): 0.294737
+freq pi(G): 0.146004
+freq pi(T): 0.272125
+
+
+ML search took 0.151000 secs or 0.000042 hours
+
+Combined Bootstrap and ML search took 0.761447 secs or 0.000212 hours
+
+Drawing Bootstrap Support Values on best-scoring ML tree ...
+
+
+
+Found 1 tree in File /project/inbre-train/inbre005/mob4485/Barton_Phylo/BearTrees/RAxML_bestTree.KnownBearsTree
+
+
+
+Found 1 tree in File /project/inbre-train/inbre005/mob4485/Barton_Phylo/BearTrees/RAxML_bestTree.KnownBearsTree
+
+Program execution info written to /project/inbre-train/inbre005/mob4485/Barton_Phylo/BearTrees/RAxML_info.KnownBearsTree
+All 2 bootstrapped trees written to: /project/inbre-train/inbre005/mob4485/Barton_Phylo/BearTrees/RAxML_bootstrap.KnownBearsTree
+
+Best-scoring ML tree written to: /project/inbre-train/inbre005/mob4485/Barton_Phylo/BearTrees/RAxML_bestTree.KnownBearsTree
+
+Best-scoring ML tree with support values written to: /project/inbre-train/inbre005/mob4485/Barton_Phylo/BearTrees/RAxML_bipartitions.KnownBearsTree
+
+Best-scoring ML tree with support values as branch labels written to: /project/inbre-train/inbre005/mob4485/Barton_Phylo/BearTrees/RAxML_bipartitionsBranchLabels.KnownBearsTree
+
+Overall execution time for full ML analysis: 0.763343 secs or 0.000212 hours or 0.000009 days
+
+RAxML has finished at Tue Nov 19 13:30:52 MST 2019
